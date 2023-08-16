@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container" id="item1">
+        <i class="fa-solid fa-music pd-r" style="color: #2874d7; padding-right: 20px;"></i>Beatz
+</div>
+    <div class="container" id="item2">
+        <div class="image"><img id="banner" src="https://drive.google.com/uc?export=download&id=170Vwrcv3PdKXmink6qFUzvzMQV87Z32J" alt="This is an image"></div>
+        <div class="mainbanner" id="mainname">FADED</div>
+        <div class="mainbanner" id="mainsinger">Alan Walker</div>
+    </div>
+    <div class="container" id="item3">
+        <div class="song-banner" id="1song">
+            <img src="https://drive.google.com/uc?export=download&id=170Vwrcv3PdKXmink6qFUzvzMQV87Z32J" id="1song" width="50">
+            <span class="song-name" id="1song">Faded - Alan Walker</span>
+        </div>
+        <div class="separate"></div>
+        <div class="song-banner" id="2song">
+            <img src="https://drive.google.com/uc?export=download&id=1YQkSWhvi1Q399RNq4v4q8CmdPm0cchVi" id="2song" width="50">
+            <span class="song-name" id="2song">Pal Pal Dil ke Paas</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="3song">
+            <img src="https://drive.google.com/uc?export=download&id=1Fp2j7BrgK4oQdRO_-U0b5b_9O5BGzNOr" id="3song" width="50">
+            <span class="song-name" id="3song">Boba Tunnel</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="4song">
+            <img src="https://drive.google.com/uc?export=download&id=17IImAyV-ap-SZj-1tXfrHnw0RCyj1Ohj" id="4song" width="50">
+            <span class="song-name" id="4song">Benche Thakar Gaan</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="5song">
+            <img src="https://drive.google.com/uc?export=download&id=1xbBRCoVINj2AZEvzdBVXMjy60lzgVZTf" id="5song" width="50">
+            <span class="song-name" id="5song">Bojhena se Bojhena</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="6song">
+            <img src="https://drive.google.com/uc?export=download&id=1aJqMxiMrmLH7MLXOx-FjtB0SXPWfC_XK" id="6song" width="50">
+            <span class="song-name" id="6song">Love me like you do</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="7song">
+            <img src="https://drive.google.com/uc?export=download&id=1_jZnE1QsAtQN5qK3uYxBik0_KuRDO30m" id="7song" width="50">
+            <span class="song-name" id="7song">Let me down slowly</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="8song">
+            <img src="https://drive.google.com/uc?export=download&id=1pUJghUR-_MJJK-MOkLfSeR0JwpSE0SKN" id="8song" width="50">
+            <span class="song-name" id="8song">Pee Loon</span>
+        </div>
+        
+        <div class="separate"></div>
+        <div class="song-banner" id="9song">
+            <img src="https://drive.google.com/uc?export=download&id=19VwcUqKSdAH5HpmxiP-UTplGC5ZaoL5D" id="9song" width="50">
+            <span class="song-name" id="9song">Phir aur kya chahiye</span>
+        </div>
+        <div class="separate"></div>
+        <div class="song-banner" id="10song">
+            <img src="https://drive.google.com/uc?export=download&id=1opFmHwX0VvgMS9h8EPWtCcSj0Koh1enI" id="10song" width="50">
+            <span class="song-name" id="10song">Ae Dil hai Mushkil</span>
+        </div>
+    </div>
+    <div class="container" id="item4">
+        <ul class="buttons">
+            <li><i class=" fa-solid fa-backward-step" style="color: #ffffff;" id="backward"></i></li>
+            <li><i class="fa-solid fa-play" style="color: #ffffff;" id="play"></i></li>
+            <li><i class="fa-solid fa-forward-step" style="color: #ffffff;" id="forward"></i></li>
+        </ul>
+       <input type="range" value="0" id="seekbar">
+       <p style="padding: 5px;" id="timedisplay">
+        -- 0 : 00 --
+       </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
