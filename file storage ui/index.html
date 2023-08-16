@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 300,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.807);
+            scroll-behavior: smooth;
+            height: 65px;
+            border-bottom: 13px solid rgb(47, 147, 31);
+            position: fixed;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            align-items: space-between;
+            padding: 10px 0px;
+        }
+
+        ul.options {
+            display: flex;
+            padding: 0px 20px;
+            margin: 0px;
+        }
+
+        ul.details {
+            display: flex;
+            padding: 0px 20px;
+            margin: 0px;
+        }
+
+        li {
+            display: flex;
+            list-style: none;
+            padding: 0px 9px;
+            align-items: center;
+            transform: scale(100%);
+            transition: 0.2s ease-in-out;
+        }
+
+        li:hover {
+            background-color: rgb(59, 255, 28);
+            color: black;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transform: scale(120%);
+            transition: 0.2s ease-in-out;
+        }
+
+        li:hover a {
+            color: black;
+        }
+
+        li a {
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+            color: beige;
+            margin: 10px;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 11rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .image {
+            align-items: center;
+        }
+
+        .image img {
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 50px;
+            height: 40px;
+            margin: 0px 40px;
+            transform: scale(1);
+            transform-origin: top;
+            transition: 0.2s ease-in-out;
+        }
+
+        .image img:hover {
+            cursor: pointer;
+            transform: scale(2);
+            transform-origin: top;
+            transition: 0.2s ease-in-out;
+        }
+
+        .section1 {
+            display: flex;
+        }
+
+        .container1 {
+            display: flex;
+            width: 50%;
+            background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(16, 45, 73));
+            height: 285px;
+            color: rgb(59, 255, 28);
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            padding-top: 79px;
+            align-items: center;
+            flex-direction: column;
+            flex-basis: auto;
+        }
+
+        div.heading {
+            display: flex;
+            font-size: 2rem;
+            animation: entry 0.5s ease-in-out;
+            margin: -20px;
+            margin-left: 10px;
+            height: 63%;
+            width: 87%;
+            align-items: center;
+        }
+
+        @keyframes entry {
+            0% {
+                transform: translateX(-500px);
+            }
+        }
+
+        .container2 {
+            width: 50%;
+            background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(16, 45, 73));
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            padding-top: 56px;
+        }
+
+        .container2 p {
+
+            color: rgb(255, 255, 255, 1);
+            text-align: right;
+            padding-left: 73px;
+            margin: 0px;
+            padding-right: 39px;
+            height: 186px;
+            line-height: 38px;
+            word-spacing: 11px;
+            font-size: 6rem;
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: row-reverse;
+            font-weight: 100;
+            animation: entry-right 1s ease-out;
+            justify-content: center;
+        }
+
+        @keyframes entry-right {
+            0% {
+                transform: translateX(500px);
+            }
+        }
+
+        .upload {
+            display: flex;
+            margin: 0px;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            margin-top: 23px;
+        }
+
+        .btn {
+            padding: 16px;
+            width: 50%;
+            background-image: radial-gradient(rgb(125, 84, 187), rgb(63, 44, 138));
+            border-radius: 50px;
+            color: azure;
+            font-size: 1.1rem;
+            border: 0px;
+            font-family: 'Poppins', sans-serif;
+            animation: upload 0.8s ease-out;
+            box-shadow: 10px 10px 20px rgb(0, 0, 0);
+            transform: scale(1);
+            transition: 0.3s ease-out;
+        }
+
+        .btn:hover, .card:hover {
+            transform: scale(1.2);
+            transition: 0.3s ease-out;
+            cursor: pointer;
+        }
+
+        @keyframes upload {
+            0% {
+                transform: scale(0);
+            }
+        }
+
+        .section2 {
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            height: 66vh;
+            background: rgba(0, 0, 0, 0.4) url(filesharing-plesk-t.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .card {
+            width: 20vw;
+            margin: 30px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: 3fr 2.5fr 1.5fr;
+            background-image: linear-gradient(to top, rgb(25, 16, 51),rgb(111, 45, 210));
+            box-shadow: 10px 10px 20px black;
+            transform: scale(1);
+            transition: 0.3s ease-out;
+        }
+
+        .internal {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .int2 {
+            width: 91%;
+            height: 76%;
+            margin:10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            align-items: center;
+            justify-content: center;
+            color: #f0ffff;
+        }
+        .int1{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        div.i1{
+            background-image: url(free-credit-counseling-feat.jpg);
+            background-size: cover;
+
+        }
+        div.i4{
+            background-image: url(easy.jpeg);
+            background-size: cover;
+
+        }
+        div.i7{
+            background-image: url(03yy022DDsenwhBBYdxvwDi-3.webp);
+            background-size: cover;
+        }
+        .Btn{
+            width: 100%;
+            margin: 12px;
+            padding: 16px;
+            background-image: radial-gradient(rgb(125, 84, 187), rgb(63, 44, 138));
+            border-radius: 50px;
+            color: azure;
+            font-size: 1.1rem;
+            border: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .Btn:hover{
+            cursor: pointer;
+        }
+        .i-p{
+            padding: 0px 29px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <navbar class="navigation">
+        <div class="container image"><img class="image" src="japanese-ramen-noodles-bowl-cartoon-illustration-mascot-logo-sticker_194708-627.avif" alt="This is an image"></div>
+        <div class="container menu">
+            <ul class="options">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Your files</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+        </div>
+        <div class="container login">
+            <ul class="details">
+                <li><i class="fa-solid fa-user" style="color: #f5f5dc; padding: 10px;"></i><a href="#">Login</a></li>
+                <li id="myaccount"><a href="#">My account</a></li>
+            </ul>
+        </div>
+    </navbar>
+    <section class="section1">
+        <div class="container1">
+            <div class="heading"> Enhance the curiosity within you</div>
+            <div class="upload"><button class="btn"><a href="#" style="text-decoration: none; color: azure;"><i
+                            class="fa-solid fa-upload" style="color: #f0ffff; margin: 0px 10px;"></i>Get started</a></button>
+            </div>
+        </div>
+        <div class="container2">
+            <p>NOODLE</p>
+        </div>
+
+    </section>
+    <hr style="margin: 0px; border: 1px solid rgb(239, 236, 55);">
+    <div class="section2">
+        <div class="card">
+            <div class="internal int1 i1"><img src="free-credit-counseling-feat.jpg" alt="This is an image"></div>
+            <div class="internal int2 i2"><p class="i-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, odio!</p></div>
+            <div class="internal int3 i3"><button class="Btn">Know more</a></button></div>
+        </div>
+        <div class="card">
+            <div class="internal int1 i4"><img src="easy.jpeg" alt="This is an image"></div>
+            <div class="internal int2 i5"><p class="i-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, odio!</p></div>
+            <div class="internal int3 i6"><button class="Btn">Know more</a></button></div>
+        </div>
+        <div class="card">
+            <div class="internal int1 i7"><img src="03yy022DDsenwhBBYdxvwDi-3.webp" alt="This is an image"></div>
+            <div class="internal int2 i8"><p class="i-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, odio!</p></div>
+            <div class="internal int3 i9"><button class="Btn">Know more</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
