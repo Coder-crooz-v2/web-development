@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    display: block;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+.main{
+    padding: 20px;
+    
+    background-color: cyan;
+}
+header h1{
+    background-color: rgb(92, 105, 111);
+    color: whitesmoke;
+    background-clip: border-box;
+    text-align: center;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    padding: 15px;
+}
+h2{
+    background-color: cadetblue;
+    background-clip: border-box;
+    margin-block: 0%;
+    padding: 3%;
+}
+p{
+    background-clip: border-box;
+    padding: 3%;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    text-align: justify;
+    color: navy;
+    font-weight: bold;
+}
+div.address{
+    background-color: cyan;
+    color: navy;
+    font-weight: bold;
+    padding: 3%;
+}
+textarea{
+    display: block;
+    width: 100%;
+    height:20%;
+}
+hr{
+    margin-block: 0%;
+    display: block;
+    overflow:visible;
+}
+.pay
+{
+    padding: 20px;
+    width: 100%; 
+}
+.button{
+    padding: 10px;
+    width: 100%; 
+    background-color: cornflowerblue;
+    border-width: 0px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    color: beige;
+}
+hr{
+    border-color: rgb(109, 100, 235);
+}
